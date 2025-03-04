@@ -1,0 +1,55 @@
+.content{
+	max-width: 1306px;
+	border-radius: 10px;
+
+	.header{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+
+		h1{
+			color: black;
+			font-size: 25px;
+			font-weight: 600;
+		}
+	}
+
+	.headerOfData{
+		display: flex;
+		justify-content: space-between;
+		background-color: #F4F8FE;
+		padding-top: 28px;
+		padding: 31px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border-radius: 10px;
+
+		h1{
+			color: black;
+			font-size: 20px;
+			font-weight: 600;
+		}
+	}
+
+	.button{
+		margin-left: 40px;
+		margin-top: 10px;
+	}
+
+	.divCreateTeam{
+		padding: 30px;
+		border-radius: 10px;
+		background-color: #F4F8FE;
+
+		.divForInputs{
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+
+		.addPhoto{
+			margin-bottom: 20px;
+			display: flex;
+		}
+	}
+}

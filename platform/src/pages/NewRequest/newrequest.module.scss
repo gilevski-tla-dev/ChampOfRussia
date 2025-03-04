@@ -1,0 +1,22 @@
+.profileEditComponenst {
+  margin-top: 30px;
+  width: 100%;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .select {
+    height: 58px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    color: black;
+    padding-left: 13px;
+
+    option {
+      color: black;
+    }
+  }
+}

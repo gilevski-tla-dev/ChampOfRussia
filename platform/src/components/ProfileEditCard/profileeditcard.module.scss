@@ -1,0 +1,56 @@
+.card {
+  margin-top: 30px;
+  width: 100%;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+
+  .imgContainer {
+    width: 204px;
+    height: 204px;
+    border-radius: 10px; /* Скруглённые углы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Обрезаем лишнее содержимое */
+    background-color: #f0f0f0; /* Фон, если картинка отсутствует */
+
+    .img {
+      width: 100%; /* Растягиваем картинку */
+      height: 100%;
+      object-fit: cover; /* Сохраняем пропорции и заполняем весь блок */
+      object-position: center; /* Центрируем изображение */
+    }
+  }
+
+  .personData {
+    margin-left: 20px;
+    width: 100%;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+
+      .fio {
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .personIfo {
+      color: #7b7b7b;
+      letter-spacing: 0.5px;
+    }
+
+    .info {
+      margin-top: 30px;
+      color: black;
+      font-size: 19px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+  }
+}

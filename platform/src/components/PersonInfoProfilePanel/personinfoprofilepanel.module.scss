@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 150px;
+
+  .avatar {
+    min-width: 100px;
+    height: 100%;
+    border-radius: 10px; /* Скруглённые углы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Обрезаем лишнее содержимое */
+    background-color: #f0f0f0; /* Фон, если картинка отсутствует */
+
+    img {
+      width: 100%; /* Растягиваем картинку */
+      height: 100%;
+      object-fit: cover; /* Сохраняем пропорции и заполняем весь блок */
+      object-position: center; /* Центрируем изображение */
+    }
+  }
+
+  .nameAndExit {
+    margin-left: 22px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .fio {
+    font-size: 20px; /* Размер шрифта */
+    color: black; /* Цвет текста */
+    font-weight: 600; /* Жирность шрифта */
+    overflow: hidden; /* Обрезаем текст, который не помещается */
+    text-overflow: ellipsis; /* Добавляем многоточие для обрезанного текста */
+    white-space: nowrap; /* Отключаем перенос текста на новую строку */
+    max-width: 200px; /* Ограничиваем ширину до 40px */
+  }
+
+  .exit {
+    color: #71717a;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .exit:hover {
+    color: red;
+  }
+}

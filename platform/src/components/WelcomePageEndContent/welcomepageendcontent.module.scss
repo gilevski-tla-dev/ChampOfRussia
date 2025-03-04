@@ -1,0 +1,149 @@
+.endContent {
+  margin-left: 0.6%;
+  margin-right: 0.6%;
+  background-color: #11192c;
+  border-radius: 10px;
+  padding-top: 40px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 50px;
+
+  .title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: left;
+    color: white;
+  }
+
+  .text {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .disciplines {
+    display: flex;
+    flex-wrap: wrap; // Это позволяет элементам переноситься на новую строку при необходимости
+    justify-content: space-between; // Добавим пространство между блоками
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .productProgramming,
+  .algorithmicProgramming,
+  .basProgramming,
+  .roboticsProgramming,
+  .POISS {
+    padding: 40px;
+
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .productProgramming {
+    background-color: #463acb;
+    text-align: left;
+    flex: 1 1 calc(33% - 20px); // Разделяем на 3 части, с отступами
+  }
+
+  .algorithmicProgramming {
+    background-color: #402fff;
+    text-align: center;
+    flex: 1 1 calc(33% - 20px); // Разделяем на 3 части, с отступами
+  }
+
+  .basProgramming {
+    background-color: #d82c20;
+    text-align: right;
+    flex: 1 1 calc(33% - 20px); // Разделяем на 3 части, с отступами
+  }
+
+  .roboticsProgramming {
+    display: flex;
+    align-items: center;
+    background-color: #d82c20;
+    text-align: left;
+    flex: 1 1 calc(33% - 20px); // Разделяем на 3 части, с отступами
+  }
+
+  .POISS {
+    background-color: #463acb;
+    text-align: right;
+    padding-left: 55px;
+    padding-right: 55px;
+    flex: 1 1 calc(33% - 20px); // Разделяем на 3 части, с отступами
+  }
+}
+
+@media (max-width: 1200px) {
+  .endContent {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .disciplines {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px; // Уменьшаем отступы между блоками для экранов меньше 1200px
+  }
+
+  .productProgramming,
+  .algorithmicProgramming,
+  .basProgramming,
+  .roboticsProgramming,
+  .POISS {
+    flex: 1 1 calc(45% - 15px); // Для экранов меньше 1200px оставляем два блока на строку
+  }
+}
+
+@media (max-width: 768px) {
+  .endContent {
+    padding: 10px !important;
+  }
+
+  .disciplines {
+    display: block;
+    margin-bottom: 17px !important;
+  }
+
+  .productProgramming,
+  .algorithmicProgramming,
+  .basProgramming,
+  .roboticsProgramming,
+  .POISS {
+    margin: 0 !important;
+    max-width: 100% !important;
+    text-align: left !important;
+    padding: 10px !important;
+    margin-bottom: 0px !important;
+    height: auto;
+  }
+
+  .POISS {
+    height: max-content;
+  }
+
+  .text {
+    font-size: 25px !important;
+  }
+
+  .title {
+    display: none;
+  }
+}
+
+@media (min-width: 2500px) {
+  .endContent {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .disciplines {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
